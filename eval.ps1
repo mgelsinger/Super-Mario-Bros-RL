@@ -93,7 +93,8 @@ $pyArgs = @(
   "--resume", $ckptPath,
   "--eval-episodes", $Episodes,
   "--record-dir", $OutDir,
-  "--video-length", $VideoLen
+  "--video-length", $VideoLen,
+  "--fps", $FPS
 )
 if ($ForceDummy) { $pyArgs += "--force-dummy" }
 
